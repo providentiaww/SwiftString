@@ -1,9 +1,19 @@
-// Generated automatically by Perfect Assistant Application
-// Date: 2017-11-11 21:12:58 +0000
+// swift-tools-version:4.0
+
 import PackageDescription
+
 let package = Package(
 	name: "SwiftString",
-	targets: [],
-	dependencies: [
-	]
+	dependencies: [],
+	targets: [
+		.target(
+			name: "SwiftString",
+			dependencies: []
+		),
+		.testTarget(
+			name: "SwiftStringTests",
+			dependencies: [],
+			path: "./Tests/SwiftStringTests/"
+		),
+		]
 )
